@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>CSS Units</title>
+  </head>
+  <body>
+    <div class="container">
+      (*The parent 'div' is height: 50vh; this equals 50% viewport height and
+      signifies half of the viewable browser height)(*'vh' is responsive to
+      screen size!)
+      <h1>Welcome</h1>
+    </div>
+
+    <h1 class="px">px Unit</h1>
+    (*'px' is not responsive to the root element(rem) of the font size. This
+    means that any 'font-size' using 'px' will be unaffected by changes in the
+    default browser settings)(*This line is default 16px(1rem); 89px above and
+    20px directly below)(*With html { font-size: 16px; }, the 'p' element
+    directly below is not affected by the CSS of any parent element)
+    <p class="pxp">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, harum totam.
+      Nihil voluptatem quae non ab reiciendis veniam nostrum porro doloribus
+      illo error quas dolor, ea vel magni obcaecati. Quis.
+    </p>
+
+    <hr />
+
+    <h1 class="percent">% Unit</h1>
+    (*'div' is a block-level element)(*Block-level elements always take up 100%
+    of the available line)(*The red parent 'div' is border: 5px; and width: 80%;
+    in style.css)(*The nested green child 'div' is border: 3px; and width: 50%;
+    and therefore is 1\2 of the parent width)
+    <br />
+    <div class="percentage-parent">
+      <div class="percentage-child">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ab sint
+        ea dolor quia? Minus ad laboriosam omnis eum quibusdam vitae
+        accusantium, fugit minima repellat id error repudiandae harum deserunt?
+      </div>
+    </div>
+
+    <br />
+
+    <hr />
+
+    <div class="rem-parent">
+      <h1 class="rem">rem Unit</h1>
+      (*1 rem = 16px)(*This section has a parent 'div' of font-size:
+      2rem;)(*Unlike 'px', 'rem' is responsive to the root element of the font
+      size in browser settings)(*The child 'p' element directly below is
+      font-size: 1rem; and is responsive to the root element as well, and is not
+      affected by the parent element)
+      <p class="rem-child">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+        nisi veritatis, iure aliquid neque cumque maiores quam fugiat quasi
+        dignissimos, quibusdam totam magni explicabo omnis eum corporis
+        doloribus enim fuga.
+      </p>
+    </div>
+
+    <hr />
+
+    <div class="em-parent">
+      <h1 class="em">em Unit</h1>
+      (*Parent 'div' is font-size: 2em;)(*Like 'px', 'em' is not responsive to
+      the root element of the font size in browser settings)(*The child 'p'
+      element below in style.css is font-size: 1rem; and is directly affected by
+      the CSS of the parent element)
+      <p class="em-child">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+        nisi veritatis, iure aliquid neque cumque maiores quam fugiat quasi
+        dignissimos, quibusdam totam magni explicabo omnis eum corporis
+        doloribus enim fuga.
+      </p>
+    </div>
+    <button>Register</button>
+
+    <br /><br />
+  </body>
+</html>
